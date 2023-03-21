@@ -1,0 +1,53 @@
+<h1>{{date | date:'full'}}</h1>
+<!--<h1 style= "text-align:center;">welcome test</h1>-->
+<h3>{{250 | currency:'TND'}}</h3>
+<h2>{{'groupe3' | uppercase}}</h2>
+<button class="test" routerLink="/home">home</button>
+<h1>{{name}}</h1>
+<p>Hello {{name2}}</p>
+<p>{{getStatus()}}</p>
+<button (click)="save()">Envoyer</button>
+<ul *ngFor= "let n of nameliste">
+    <li>{{n}}</li>
+</ul>
+<div *ngIf="condition">
+<h1>Hello World</h1>
+</div>
+<input type="text" class="Form-control"[(ngModel)]="msg"><b class="text-Danger">{{msg}}</b> 
+<div [ngSwitch]="name">
+    <div *ngSwitchCase="'Ahmed'">welcome  Ahmed</div>
+    <div *ngSwitchCase="'Imen'">welcome  Imen </div>
+    <div *ngSwitchCase="'Ali'">welcome  Ali </div>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-secondary">Secondary</button>
+  <button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
